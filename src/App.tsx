@@ -1,10 +1,14 @@
 import React from 'react';
+import { FirebaseProvider } from './firebase-provider';
 
 function App() {
 	return (
-		<div className="App">
-			<h1>FireBase Message Test</h1>
-		</div>
+		<>
+			<FirebaseProvider />
+			<div className="App">
+				<h1>FireBase Message Test</h1>
+			</div>
+		</>
 	);
 }
 
